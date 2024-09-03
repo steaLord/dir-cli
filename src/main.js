@@ -136,7 +136,10 @@ function runCommandsFromFile(filename) {
 const STORAGE_FILE_NAME = "storage.json";
 
 if (fs.existsSync(STORAGE_FILE_NAME)) {
-  tree = JSON.parse(fs.readFileSync(STORAGE_FILE_NAME, "utf8"));
+  const storage = fs.readFileSync(STORAGE_FILE_NAME, "utf8");
+  if (storage) {
+    tree = JSON.parse(storage);
+  }
 }
 
 if (process.argv.length > 2) {
