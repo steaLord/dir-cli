@@ -1,16 +1,15 @@
 {
   "name": "dir-cli",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.0.2",
+  "main": "src/main.js",
   "scripts": {
     "dev": "nodemon src/main",
     "start": "node src/main",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "author": "steaLord",
   "license": "ISC",
-  "description": "",
+  "description": "Virtual Directories CLI",
   "devDependencies": {
     "jest": "^29.7.0",
     "nodemon": "^3.1.4"
